@@ -1,0 +1,13 @@
+<launch>
+  <rosparam command="load" file="$(find traj_tracker)/config/traj_mr1.yaml" param="trajectory_description_1"/>
+
+  <node pkg="turtlesim" type="turtlesim_node" name="turtlesim">
+
+  </node>
+
+  <node pkg="traj_tracker" type="mr_tracker.py" name="turtlebot_controller">
+
+  </node>
+  
+
+</launch>
